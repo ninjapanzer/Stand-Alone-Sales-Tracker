@@ -1,0 +1,9 @@
+Need to have storage location for targets from mgr
+
+Need to extract date from field--------- done
+
+Need to allow for row deletion----------done
+
+Need to need to create goal vs target vs store information
+
+Need input validation to assure that integers are being entered

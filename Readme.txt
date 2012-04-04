@@ -33,7 +33,7 @@ paul.scarrone@gmail.com
 But some code was adapted from:
 
 Calling External Javascript V1.0.0
-Copyright ï¿½ 2006, Randy Recob
+Copyright © 2006, Randy Recob
 All rights reserved.
 
 Author:

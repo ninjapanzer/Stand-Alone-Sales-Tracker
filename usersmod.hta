@@ -1,0 +1,100 @@
+
+
+<html>
+<head>
+<title>Paul's Standalone Self Entry Tracker</title>
+<script src="xml.js"></script>
+</head>
+<body bgcolor="gray" onLoad="javascript:setCurrentMonth(); JSDisplayTable(document.getElementById('name').value, document.getElementById('monthfilter').value);">
+<form>
+<table>
+<tr id="topheader" align="center">
+<td>Name</td>
+<td>Order#</td>
+<td>Contracts</td>
+<td>Data</td>
+<td>Accessories</td>
+<td>Phones</td>
+</tr>
+<tr>
+<td><select onchange="javascript:JSDisplayTable(document.getElementById('name').value, document.getElementById('monthfilter').value);" id="name">
+<option value ="All">All</option>
+</select>
+</td>
+<td><input size="10" type="text" id="order" onblur="Validate(0, 0, 'order')" ></td>
+<td><input size="10" type="text" id="contracts" onblur="Validate(1, 0, 'contracts')"></td>
+<td><input size="10" type="text" id="data" onblur="Validate(1, 0, 'data')"></td>
+<td><input size="10" type="text" id="accessories" onblur="Validate(1, 0, 'accessories')"></td>
+<td><input size="10" type="text" id="phones" onblur="Validate(1, 0, 'phones')"></td>
+<td><input type="button" value="Enter" id="entrybutton" onClick="entryvalidator();"></td>
+</tr>
+<tr>
+<td><div size="10" id="namePut"></div></td>
+<td><div size="10" id="orderPut"></div></td>
+<td><div size="10" id="contractsPut"></div></td>
+<td><div size="10" id="dataPut"></div></td>
+<td><div size="10" id="accessoriesPut"></div></td>
+<td><div size="10" id="phonesPut"></div></td>
+</tr>
+<tr>
+<td><select onchange="javascript:JSDisplayTable(document.getElementById('name').value, document.getElementById('monthfilter').value);" id="monthfilter">
+<option value ="All">All</option>
+<option value ="01">January</option>
+<option value ="02">Feburary</option>
+<option value ="03">March</option>
+<option value ="04">April</option>
+<option value ="05">May</option>
+<option value ="06">June</option>
+<option value ="07">July</option>
+<option value ="08">August</option>
+<option value ="09">September</option>
+<option value ="10">October</option>
+<option value ="11">November</option>
+<option value ="12">December</option>
+</select></td>
+<td><input id="newlinecheck" size="10" onclick="togglefornewline();" type="button" value="New Line"></td>
+<td></td>
+<td><input id="vzaccessemailcheck" size="10" onclick="togglefordata();" type="button" value="VZA/VZE"></td>
+</tr>
+<tr>
+<td><div id="secondlevel1"></div></td>
+<td><div id="secondlevel2"></div></td>
+<td><div id="secondlevel3"></div></td>
+<td><div id="secondlevel4"></div></td>
+<td><div id="secondlevel5"></div></td>
+</tr>
+<tr>
+<td></td>
+<td><div id="nlineinputdata"></div></td>
+<td><div id="nlinecpeinputdata"></div></td>
+<td><div id="vzaccessinputdata"></div></td>
+<td><div id="vzemailinputdata"></div></td>
+</tr>
+<tr>
+<td></td>
+<td><div size="10" id="nlineinputPut"></div></td>
+<td><div size="10" id="nlinecpeinputPut"></div></td>
+<td><div size="10" id="vzaccessinputPut"></div></td>
+<td><div size="10" id="vzemailinputPut"></div></td>
+</tr>
+</table>
+</form>
+<div id="UsersInfo"></div>
+<div id="jsinfo"></div>
+<script type="text/javascript">
+//xml.getElementsByTagName("USER")[0].getAttribute("CONTRACTS");
+//window.alert(sumcol('CONTRACTS', document.getElementById('name').value));
+
+//makehidden('vzaccessinputdata');
+//makehidden('secondlevel1');
+//makehidden('secondlevel2');
+//makehidden('secondlevel3');
+//makehidden('secondlevel4');
+//makehidden('secondlevel5');
+//makehidden('nlinecpeinputdata');
+//makehidden('vzemailinputdata');
+//window.alert(extractdate('20081107', 'month'));
+JSDisplayTable(document.getElementById('name').value);
+</script>
+</body>
+</html>
